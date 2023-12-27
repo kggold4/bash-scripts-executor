@@ -4,6 +4,9 @@
 working_path="$WORKING_PATH"
 log_file="executor.log"
 
+# Reset log file
+echo -n > "$log_file"
+
 # Log function
 log_message() {
     local log_text="$1"
